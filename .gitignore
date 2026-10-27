@@ -1,0 +1,30 @@
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Dataset folders
+helmet_project/image/
+helmet_project/labels/
+helmet_project/train/
+helmet_project/val/
+helmet_project/test/
+helmet_project/yolov8n.pt
+
+# Training outputs, except the trained model we need
+helmet_project/runs/*
+!helmet_project/runs/detect/
+helmet_project/runs/detect/*
+!helmet_project/runs/detect/train/
+helmet_project/runs/detect/train/*
+!helmet_project/runs/detect/train/weights/
+helmet_project/runs/detect/train/weights/*
+!helmet_project/runs/detect/train/weights/best.pt
+
+# Temporary files
+*.log
+.DS_Store
+Thumbs.db
